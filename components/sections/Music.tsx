@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Music, Mic2, Download, ChevronDown, ChevronUp, PlayCircle, Headphones, PenTool } from 'lucide-react';
+import { Music, Download, ChevronDown, ChevronUp, PlayCircle, Headphones, PenTool } from 'lucide-react';
 
 interface Song {
   id: number;
@@ -129,167 +129,401 @@ const SONGS: Song[] = [
   },
   {
     id: 2,
-    title: "Bestie Forever",
+    title: "窓際のあの子",
     artist: "Maho & Ayano",
     composer: "Suno AI",
     lyricist: "まほ",
     filename: "song2.mp3",
-    coverImage: "https://placehold.co/400/A78BFA/FFFFFF?text=Bestie+Forever",
-    description: "日頃の感謝を込めて。友情は永遠！",
+    coverImage: "https://placehold.co/400/9CA3AF/FFFFFF?text=Window+Seat",
+    description: "いつもと同じ駅前、バスに乗り遅れた瞬間の切なさと、窓際のあの子への淡い想い。",
     lyrics: `
-(Verse)
-教室の隅で話した夢
-今も変わらずここにある
-大人になっても変わらない
-私たちの距離感
+いつもと同じ駅前
+全速力で駆け抜ける
+頭の中で秒読み
+そろそろバスが来るはずだと
 
-(Chorus)
-Bestie Forever
-どこにいても 心は繋がってる
-ゆいか まほ あやの
-最強のトリオだね
+切らした息 飲み込んだ
 
-(Bridge)
-喧嘩した日もあったけど
-それも今では笑い話
-これからもよろしくね
+閉まるドア
+動き出すバス
+伸ばした手は届かず
+ただ立ち尽くした
+ああ またやってしまった
+朝の風がやけに冷たい
 
-(Chorus)
-Bestie Forever...
+動き出すバス
+遠ざかる音
+つい目で追ってしまう
+
+それは
+窓際のあの子
+いつもの制服のまま
+何も知らず前を向いてる
+
+やがてフェードアウト
+視界からフェードアウト
+
+いつもと同じ駅前で
+実は少しだけ期待してた
+今日こそは間に合うかもって
+根拠もなく信じてたんだ
+思いが巡った
+
+必死に息を整えて
+足元を見つめて
+間に合わなかった理由を
+誰にも言えず噛みしめた
+変わらない日々を繰り返す
+
+閉まるドア
+動き出すバス
+ふと顔を上げる
+窓際のあの子
+一瞬こちらを見た気がして
+慌てて目を伏せた
+
+やがてフェードアウト
+視界からフェードアウト
+
+この透明なガラス越し
+だけど伝わった気がした
+「ああ…」って小さな落胆
+
+やがてフェードアウト
+視界からフェードアウト
+
+いつもと同じ駅前
+立ち尽くして
+今日も見送る
+
+動き出すバス
+遠ざかる音
+つい目で追ってしまう
+
+それは
+窓際のあの子
     `
   },
   {
     id: 3,
-    title: "放課後ティータイム",
+    title: "本日の主役",
     artist: "Maho & Ayano",
     composer: "Suno AI",
-    lyricist: "あやの",
+    lyricist: "まほ",
     filename: "song3.mp3",
-    coverImage: "https://placehold.co/400/FBBF24/FFFFFF?text=Tea+Time",
-    description: "あの日の放課後、いつものカフェで語り合った時間を曲にしました。",
+    coverImage: "https://placehold.co/400/A78BFA/FFFFFF?text=Today's+Star",
+    description: "今日はゆいかちゃんが主役！ワクワクするバースデーソング。",
     lyrics: `
-(Verse 1)
-チャイムが鳴れば 合図だね
-いつもの席で 待ち合わせ
-テストの点数 恋の話
-尽きない話題 ドーナツ片手に
+[Intro]
+[Upbeat Drum Fill]
 
-(Chorus)
-放課後ティータイム
-夕日が差し込む 窓際で
-時間が止まればいいのにな
-君といると 素直になれる
+[Chorus]
+ゆいか ハッピーバースデー
+今日はもうそれだけでいい
+目覚ましより先に
+この言葉が鳴ってる
 
-(Verse 2)
-大人ぶって ブラックコーヒー
-やっぱり苦くて 笑い合う
-そんな何気ない 瞬間が
-宝物だと 気づいたよ
+[Verse 1]
+自分の誕生日じゃないのに
+スーパーでケーキとか買っちゃう
+理由なんて決まってる
 
-(Outro)
-また明日ね 手を振って
-帰り道も ずっと笑顔
+[Pre-Chorus]
+好きな歌 流して
+うまくいかないことは
+今日は全部お休み
+
+[Chorus]
+ゆいか ハッピーバースデー
+ちょっと照れた顔もかわいいね
+何回言っても足りないから
+まだまだ言うよ
+
+[Verse 2]
+世界が少し騒がしくなる
+カレンダー見てソワソワしちゃう
+理由なんて決まってる
+
+[Bridge]
+[Bright Synthesizer Solo]
+これからも一緒に
+歳重ねていこう
+楽しい日々 過ごしていこう
+
+[Final Chorus]
+ゆいか ハッピーバースデー
+ワクワクが止まらない
+最高の今日にしよう！
+
+[Outro]
+ゆいか ハッピーバースデー
+[End]
     `
   },
   {
     id: 4,
-    title: "Dreamer",
+    title: "Go!Yuika!",
     artist: "Maho & Ayano",
     composer: "Suno AI",
     lyricist: "まほ",
     filename: "song4.mp3",
-    coverImage: "https://placehold.co/400/60A5FA/FFFFFF?text=Dreamer",
-    description: "それぞれの夢に向かって頑張るゆいかちゃんへの応援歌。",
+    coverImage: "https://placehold.co/400/F59E0B/FFFFFF?text=Go!+Yuika!",
+    description: "朝の通勤もこれさえあれば無敵！元気が出るポジティブソング。",
     lyrics: `
-(Verse 1)
-誰も知らない 道を行く
-君の背中は 輝いてる
-躓いたって 立ち上がる
-その強さに 憧れてた
+[Intro]
+[Handclaps rhythmically]
+[Upbeat Piano and Bass]
+せーの！
+(Oh！ Oh！)
 
-(Chorus)
-Fly High, Dreamer
-君ならできる 信じてる
-どんな高い 壁だって
-きっと越えられるはずさ
+[Verse 1]
+玄関開けて　イヤホンつけて
+いつもの道　今日はちょっといい
+空気が軽い　靴音リズム
+一歩目から　もう始まってる
 
-(Bridge)
-一人じゃないよ 振り返れば
-私たちが いつもいる
-エールを送るよ 全力で
+[Pre-Chorus]
+深呼吸して
+顔を上げたら
+合図はもう
+聞こえてるでしょ？
 
-(Chorus)
-Fly High, Dreamer
-大空高く 羽ばたいて
-君の描く 未来地図
-一緒に見に行こう
+[Chorus]
+ゆいか！ (Yeah！)
+ゆいか！ (Alright！)
+ゆいか！ ゆいか！ (Go！ Go！)
+
+朝のテンポで進んでく
+信号だって味方する
+リズムに乗って歩けば
+全部ちゃんとついてくる
+
+[Post-Chorus]
+Uh！ Uh！ (Hey！ Hey！)
+
+[Verse 2]
+憂鬱だけど
+起きたから勝ち
+会社に着けば
+完全勝利
+
+[Bridge]
+準備は？ (OK！)
+気分は？ (Good！)
+ゆいか！ (Let’s go！)
+
+[Chorus]
+足音鳴らして進んでく
+テンポはもうつかんでる
+止まらなくていい
+そのままでいい
+
+[Tag]
+ゆいか！ (Hey！)
+ゆいか！ (Ho！)
+せーの！ (Let’s go！)
+
+[Outro]
+今日のスタート切ったなら
+あとは流れに乗るだけ
+無理せず行こう
+このリズムで
+[Handclaps and cheering]
+[End]
     `
   },
   {
     id: 5,
-    title: "真夜中の電話",
+    title: "FERMENT IN HELL",
     artist: "Maho & Ayano",
     composer: "Suno AI",
-    lyricist: "あやの",
+    lyricist: "まほ",
     filename: "song5.mp3",
-    coverImage: "https://placehold.co/400/1F2937/FFFFFF?text=Midnight+Call",
-    description: "眠れない夜に長電話した時のこと。辛い時こそ頼ってね。",
+    coverImage: "https://placehold.co/400/1F2937/FFFFFF?text=FERMENT",
+    description: "まさかのパン生地視点！？激しいメタルサウンドで送る発酵の物語。",
     lyrics: `
-(Verse 1)
-時計の針は てっぺん回る
-スマホが光る 君の名前
-「ごめんね、起きてる？」
-震える声が 聞こえたよ
+[Intro]
+[Heavy Distorted Guitar Riff]
+[Fast Blast Beats]
 
-(Chorus)
-真夜中の電話
-涙が枯れるまで 話そう
-言葉にならなくていい
-ただ繋がってるだけでいい
+[Verse 1]
+暗いボウルの底で目覚めた
+粉と水が混ざる瞬間
+塩が走る　イーストが笑う
+ここが俺のスタート地点
+叩かれて！ 伸ばされて！
+空気を抱いて！ 生き返る！
 
-(Verse 2)
-朝が来るまで 寄り添うよ
-電波越しの 温もりで
-大丈夫 明日はきっと
-少しだけ 笑えるはず
+[Pre-Chorus]
+ぐるぐる回る
+フックの渦
+逃げ場はない
+でも悪くない
 
-(Outro)
-おやすみ また明日
-いい夢を見てね
+[Chorus]
+こねろ！こねろ！
+俺はパン生地！
+潰されて強くなる
+発酵！膨張！
+止まらない
+この中で夢を見てる
+こねろ！こねろ！
+まだ途中だ
+焼かれるその日まで
+俺は！ 膨らみ続ける！
+
+[Verse 2]
+ラップを剥がせ！ 解放の時！
+ぬくもりが 俺を育てる
+静かな時間 泡が歌う
+内側から 叫んでる！
+
+[Pre-Chorus 2]
+待つことも 仕事のうち
+焦るな 今が大事
+
+[Chorus]
+こねろ！こねろ！
+俺はパン生地！
+叩かれて進化する
+発酵！上昇！
+まだいける
+限界は知らない
+こねろ！こねろ！
+恐れるな
+オーブンは怖くない
+俺は！ パンになる！
+
+[Breakdown]
+[Slow Heavy Tempo]
+[Deep Guttural Growl]
+焼かれる…
+だが
+それが
+完成だぁぁぁぁ！！
+
+[Final Chorus]
+[Fast Tempo]
+こねろ！こねろ！
+俺はパン生地！
+外はカリッと
+中はフワッと
+熱の中で
+生まれ変わる！
+
+[Outro]
+[Screaming]
+ボウルを出て！ 世界へ！
+俺は！
+パンだ！
+[Extremely Heavy Riff End]
+[Fade out]
     `
   },
   {
     id: 6,
-    title: "これから",
+    title: "MY FRIENDS IS A HERO!",
     artist: "Maho & Ayano",
     composer: "Suno AI",
     lyricist: "まほ",
     filename: "song6.mp3",
-    coverImage: "https://placehold.co/400/34D399/FFFFFF?text=Future",
-    description: "これからの未来も、おばあちゃんになっても仲良しでいようね。",
+    coverImage: "https://placehold.co/400/3B82F6/FFFFFF?text=HERO",
+    description: "料理上手で時間に正確、そんなゆいかちゃんは私たちのヒーロー！",
     lyrics: `
-(Verse 1)
-アルバムのページ 増えていく
-シワの数も 増えていくかな
-でも変わらない ものがある
-この絆は 色褪せない
+[Intro]
+[Heroic Orchestral Fanfare]
+[Sound of a punch - BAM! POW!]
+Here comes my friend!
+その名はYuika!
+普通の一日が
+カラフルに変わる
 
-(Chorus)
-これから先も 何十年
-一緒にお祝い しようね
-おばあちゃんになっても
-派手な服着て 街歩こう
+[Verse 1]
+キッチンから
+いい匂い
+「これ適当だよ」って言うけど
+いやいや
+プロじゃない？ Seriously!
 
-(Verse 2)
-杖をついても 手を繋ぎ
-美味しいもの 食べに行こう
-思い出話に 花咲かせ
-ゲラゲラ笑う 私たち
+料理が上手い
+パンも焼けちゃう
+エプロンが
+マントみたいだね
 
-(Outro)
-約束だよ ずっと
-Friends Forever
-大好きだよ ゆいか
+[Pre-Chorus]
+みんなが走って
+息切れしてるホーム
+一人だけ
+時計見て余裕顔
+
+[Chorus]
+You’re my hero, my friend!
+新幹線の時間
+なぜか
+一人だけ間に合う magic
+You’re my hero, my friend!
+一緒にいると世界が
+カラフルに変わる
+
+[Verse 2]
+話し上手で聞き上手
+相槌のテンポ
+滑舌良すぎ Seriously!
+
+二刀流なんて
+才能だと思う
+それ気づいてないのが
+またすごい
+
+[Pre-Chorus 2]
+歌えば
+空気が変わる
+冗談みたいに
+上手すぎる voice
+
+[Chorus]
+That passion! That fire!
+好きな作品
+情熱がすごい
+That passion! That fire!
+
+[Bridge]
+[Dramatic Orchestral Build-up]
+You’re my hero, my friend!
+物腰柔らか
+隠された実力
+You’re my hero, my friend!
+その努力は
+全部本物
+
+[Breakdown]
+[Half-Spoken, Half-Sung]
+一緒にいて楽しい
+それだけで
+十分なのに
+自然体でいられる
+That’s rare, you know?
+
+[Final Chorus]
+[Full Energy, Soaring Vocals]
+You’re my hero, my friend!
+その特別な能力
+日常の中で
+人を救ってる
+You’re my hero, my friend!
+何も飾らず
+そのままで最強
+
+[Outro]
+[Sound of a punch - BAM! POW!]
+今日も世界は平和
+理由はシンプル
+My friend is here
+ページを閉じても
+続いてく
+このストーリー
+[Heroic Orchestral Finale]
+[End]
     `
   }
 ];
@@ -332,10 +566,6 @@ const MusicSection: React.FC = () => {
                       <div>
                         <h3 className="text-xl md:text-2xl font-bold text-gray-800">{song.title}</h3>
                         <div className="flex flex-col gap-1.5 mt-2">
-                            <p className="text-sm text-pink-500 font-bold flex items-center gap-1">
-                                <Mic2 className="w-3 h-3" />
-                                {song.artist}
-                            </p>
                             <div className="flex flex-wrap gap-2 text-[10px] md:text-xs text-gray-500">
                                 <span className="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded border border-gray-100">
                                     <span className="text-pink-400 font-bold">作詞</span> {song.lyricist}
